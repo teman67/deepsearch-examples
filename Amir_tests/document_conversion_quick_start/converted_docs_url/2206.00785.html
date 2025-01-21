@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+        <html>
+
+        <head>
+        <meta charset="UTF-8" />
+        <title></title>
+
+        <style>
+        ul            {   border: 2px solid red; }
+        li            {   border: 1px solid blue; }
+        section       {   border: 1px dashed green; }
+        span.title    {   background-color: yellow; }
+        span.number   {   background-color: aquamarine; }
+        .footnote     {   font-size: 70%; }
+        sup, sub      {   background-color: coral; }
+        table         { border-collapse: collapse; margin-top: 50px; }
+        table, td, th { border: 1px solid black; padding: 8px; text-align: left; }
+        tr:hover      { background-color:#f5f5f5 }
+        </style>
+
+        <labeler-meta>
+        <bbox page="1" x="0" y="0" width="612" height="792" />
+<bbox page="2" x="0" y="0" width="612" height="792" />
+<bbox page="3" x="0" y="0" width="612" height="792" />
+<bbox page="4" x="0" y="0" width="612" height="792" />
+<bbox page="5" x="0" y="0" width="612" height="792" />
+<bbox page="6" x="0" y="0" width="612" height="792" />
+<bbox page="7" x="0" y="0" width="612" height="792" />
+<bbox page="8" x="0" y="0" width="612" height="792" />
+<bbox page="9" x="0" y="0" width="612" height="792" />
+<bbox page="10" x="0" y="0" width="612" height="792" />
+<bbox page="11" x="0" y="0" width="612" height="792" />
+
+        <source page="1" model="model" page-hash="dc8ab77215bdf5d1c50e4635bc886078ceb862131df9de406624cb73be373fc1" />
+<source page="2" model="model" page-hash="58474aac22030f7608c307aeb1aee7b69b8b4ca533c80ae41ab68153790d6ab0" />
+<source page="3" model="model" page-hash="1d96fb50e9a4d970cab5199fa3b76469b804c2457390c4bdda04890bc651b813" />
+<source page="4" model="model" page-hash="4dc4d130627b1f9841208469936e65cf4667f47730044ef31ecbf9664a41d706" />
+<source page="5" model="model" page-hash="4ba309b0bcae706030066723f66989d89818f00305702bbd5935d6eca9d4db6d" />
+<source page="6" model="model" page-hash="09357309f7ee2ad6efe2951fcc314bcdac7f6296b244724a78d9e9037bd071ff" />
+<source page="7" model="model" page-hash="1b8ad8508fe45a56af6aafcaeefcefa168b0b0e8530b9b0c60be1542ce001c14" />
+<source page="8" model="model" page-hash="8289d80b04962b29ea5f2967b69ca0ae43fb56535cef4fe36630c58a9edde998" />
+<source page="9" model="model" page-hash="ba08e96ab334e61dfcde2a71203a96856d5261280e445df5f7d84d7e5974170e" />
+<source page="10" model="model" page-hash="f90176f27b3737c29840cf46f7c23ef86f607a2edd94f4c4201e931817f7d2ee" />
+<source page="11" model="model" page-hash="5c71fa7ee304c4d871411bbb71734c39660173335fc28f955dc3ee8e044fd748" />
+
+        </labeler-meta>
+
+        </head>
+
+        <body>
+        <h1></h1>
+
+        <p class="page-header" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="16.919574737548828" y="219.2586669921875" width="19.42021942138672" height="335.7413635253906">arXiv:2206.00785v1 [cs.DL] 1 Jun 2022</bbox>
+</p>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="1" x="54.96947479248047" y="53.79168701171875" width="501.9220657348633" height="50.9825439453125">Delivering Document Conversion as a Cloud Service with High Throughput and Responsiveness</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="104.53406524658203" y="121.3499755859375" width="99.15375518798828" height="48.4459228515625">1 st Christoph Auer IBM Research Ruschlikon, Switzerland cau@zurich.ibm.com</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="98.43016815185547" y="199.62042236328125" width="114.65190887451172" height="49.53546142578125">4 th Cesar Berrospi Ramis IBM Research Ruschlikon, Switzerland ceb@zurich.ibm.com</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="262.30255126953125" y="120.725341796875" width="99.59628295898438" height="49.07049560546875">2 nd Michele Dolfi IBM Research Ruschlikon, Switzerland dol@zurich.ibm.com</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="262.4393615722656" y="199.5882568359375" width="99.45947265625" height="49.56756591796875">5 th Peter W.J. Staar IBM Research Ruschlikon, Switzerland taa@zurich.ibm.com</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="48.2813720703125" y="290.4234924316406" width="252.24044799804688" height="248.5675811767578">Abstract-Document understanding is a key business process in the data-driven economy since documents are central to knowledge discovery and business insights. Converting documents into a machine-processable format is a particular challenge here due to their huge variability in formats and complex structure. Accordingly, many algorithms and machine-learning methods emerged to solve particular tasks such as Optical Character Recognition (OCR), layout analysis, table-structure recovery, figure understanding, etc. We observe the adoption of such methods in document understanding solutions offered by all major cloud providers. Yet, publications outlining how such services are designed and optimized to scale in the cloud are scarce. In this paper, we focus on the case of document conversion to illustrate the particular challenges of scaling a complex data processing pipeline with a strong reliance on machine-learning methods on cloud infrastructure. Our key objective is to achieve high scalability and responsiveness for different workload profiles in a well-defined resource budget. We outline the requirements, design, and implementation choices of our document conversion service and reflect on the challenges we faced. Evidence for the scaling behavior and resource efficiency is provided for two alternative workload distribution strategies and deployment configurations. Our best-performing method achieves sustained throughput of over one million PDF pages per hour on 3072 CPU cores across 192 nodes.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="48.46357727050781" y="539.8722534179688" width="251.60194396972656" height="19.2578125">Index Terms-cloud applications, document understanding, distributed computing, artificial intelligence</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="1" x="135.40499877929688" y="572.6460266113281" width="77.96681213378906" height="10.024978637695312">I. INTRODUCTION</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="48.34801483154297" y="588.62841796875" width="251.93799591064453" height="129.96861267089844">Over the past decade, many organizations have accelerated their transformation into data-driven businesses, as studies have shown its positive impact in efficiency, decision making, or financial performance [1], [2]. Leading companies are increasingly deploying workloads on public and private cloud infrastructure, including business intelligence processing and machine learning models in data analytics platforms [3]. This is owed to several factors such as high availability, lower cost for compute, and storage [4], as well as the flexibility to scale up or down a cloud-based business process to fit the operational needs. Workloads and services can be container-</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="311.2952880859375" y="289.8006896972656" width="251.7392578125" height="22.63177490234375">ized, deployed, and orchestrated through widely adopted and standardized platforms like Kubernetes [5], [6].</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="311.419921875" y="314.11846923828125" width="251.84307861328125" height="131.20706176757812">A key business process relevant to many companies is document understanding. Documents may constitute contracts, guidelines, manuals, presentations, papers, etc., which contain valuable knowledge for their operations. We observe that several specialized companies and all major cloud providers offer dedicated services (SaaS) for various aspects of document understanding such as Optical Character Recognition (OCR) (e.g., Amazon Textract1), forms, and invoice parsing (Docparser2, Nanonets3, Google Document AI4, Microsoft SharePoint Syntex5), or conversion of unstructured formats such as PDF into structured content (IBM Watson Discovery6).</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="311.13909912109375" y="446.4662170410156" width="252.5723876953125" height="201.33746337890625">Conversion of PDF documents into a structured, machineprocessable format is a particularly challenging business process due to the high variability and weak normalization of its input. To name a few dimensions of variability, PDF documents can be short or long, encode programmatic or scanned content, have simple or complex page layouts, may contain tables or figures, etc. Thus, the process of recovering their structure and extracting content in high detail entails several dynamic steps (see Fig. 1). On the computational side, this relies on multiple algorithms and machine-learning (ML) models specialized for particular tasks. Examples for such models include OCR [7], document layout analysis [8]-[10], table structure recovery [11], [12], figure understanding [13], reference and citation resolution [14], etc. Furthermore, the ML landscape is evolving rapidly, with new models frequently exposing significantly different characteristics in terms of computational expenses, memory usage, or accelerator re-</bbox>
+</span></p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="319.8901062011719" y="659.4698181152344" width="106.6502685546875" height="9.381645202636719">1https://aws.amazon.com/textract</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="319.5246276855469" y="669.7465744018555" width="72.31671142578125" height="9.116592407226562">2https://docparser.com</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="319.430908203125" y="679.7531433105469" width="108.44351196289062" height="8.824333190917969">3https://nanonets.com/invoice-ocr</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="319.5223083496094" y="689.9786071777344" width="125.23251342773438" height="8.461875915527344">4https://cloud.google.com/document-ai</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="319.35888671875" y="699.6346435546875" width="226.92742919921875" height="8.866958618164062">5https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="319.5159912109375" y="709.058952331543" width="150.96630859375" height="9.1075439453125">6https://www.ibm.com/cloud/watson-discovery</bbox>
+</p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="1" x="414.93572998046875" y="120.58746337890625" width="98.14141845703125" height="49.20831298828125">3 rd Andr&#x27;e Carvalho SoftINSA Lda. Tomar, Portugal afecarvalho@gmail.com</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="170.3887176513672" y="243.3314208984375" width="270.96360778808594" height="8.31488037109375">Fig. 1. Sketch of operation dependency graph in a document conversion pipeline</bbox>
+</span></p>
+<p><span info="figure" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="50.43999481201172" y="49.85552978515625" width="510.4881057739258" height="183.546875">Fig. 1. Sketch of operation dependency graph in a document conversion pipeline</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="48.25545883178711" y="274.31463623046875" width="252.19989395141602" height="117.5181884765625">quirements. Additionally, many bottlenecks hide in logical operations such as parsing the PDF code, rasterizing a PDF page to a bitmap, or serialization and database transactions. On top of that, a cloud service to solve this business task needs to be flexible enough to support different consumption modes. Some users may need to convert large document repositories in bulk, expecting high throughput, while others may want to convert a single document ad-hoc, expecting short response time. Satisfying both expectations in a common application architecture is non-trivial.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="48.337310791015625" y="401.9737548828125" width="251.96145629882812" height="153.59896850585938">In short, a cloud service for document conversion needs to be easily adaptable, must scale with model resource demand and workload sizes, and ideally avoids strong assumptions about the consumption mode. As such, it shares many traits with cloud services for other business processes but also holds unique challenges, which make it an interesting systems engineering target. In this paper, we take the subject of document conversion as a case to illustrate the particular challenges of scaling a complex data processing pipeline with strong reliance on ML methods on cloud infrastructure. We outline the practical problems our team faced while developing a cloud service of such nature [15] and present solutions in several aspects. Our main contributions are:</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="58.926998138427734" y="576.8339996337891" width="241.13403701782227" height="46.1207275390625">1) We propose a validated novel approach to efficiently scale an end-to-end processing pipeline leveraging ML in a cloud environment for the use-case of PDF document conversion.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="58.866241455078125" y="624.8367462158203" width="241.15567016601562" height="22.028976440429688">2) We reflect on the design considerations, challenges, and implementation choices of our PDF conversion service.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="58.8161735534668" y="648.7107391357422" width="241.20570755004883" height="22.064987182617188">3) We introduce a set of comparative metrics to evaluate the performance characteristics.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="58.43177032470703" y="672.6552734375" width="241.75328826904297" height="45.94146728515625">4) We present and analyze the resulting scaling and response behavior in a benchmark setup on common cloud infrastructure for two alternative workload distribution strategies and deployment configurations.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="2" x="320.13482666015625" y="274.06634521484375" width="234.07763671875" height="22.125396728515625">II. REQUIREMENTS AND OBJECTIVES FOR DOCUMENT CONVERSION IN THE CLOUD</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="311.1325378417969" y="302.0553894042969" width="252.22177124023438" height="165.315185546875">As teased in the introduction, a cloud service for document conversion provides a particularly broad and challenging set of requirements, which are not trivial to satisfy all at once. Precisely this combination of real-world requirements make it an interesting target for a case-study on scaling a business process in the cloud. Broadly speaking, we can split the requirements into three categories, namely 1. the ability to process documents with a wide variety in characteristics at scale, 2. the ability to incorporate and consume several ML models for different tasks and 3. the ability to perform well in different user consumption modes (bulk or ad-hoc) which sit on opposite ends. It should be noted that only the first category is linked to the domain problem of document conversion. The latter two categories are shared by many cloud services.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="2" x="311.2742919921875" y="469.4500427246094" width="252.13812255859375" height="249.14651489257812">PDF document processing: We work under the premise that a document conversion service must treat a single document as an atomic data-unit. For instance, a single output file in JavaScript Object Notation (JSON) needs to be produced for each PDF file that is submitted. Contrary to other data formats such as images or plain text, documents have an internal granularity in the shape of pages. This trait can be exploited, since many operations can be executed independently on each page. Examples of such operations are text-cell identification (either through parsing programmatic PDF code or through OCR), layout segmentation, table-structure recovery, figure classification, etc. Two critical constraints need to be recognized here. Firstly, the intra-page operations may have dependencies. For instance, table-structure recovery relies on text-cell identification and on layout segmentation to locate a table. Secondly, the results of each operation on each page needs to be ultimately merged into a single output document (see Figure 1, phase D). This merge operation ensures that the content of the document has the correct section-structure and ordering. It is therefore an invalid assumption that the conversion of a document can be simply treated as an embarrassingly parallel</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="48.1881217956543" y="50.78118896484375" width="251.89992141723633" height="201.56390380859375">set of operations over its pages. Rather, to obtain the converted document, one has to execute a complex operation dependency graph which dynamically forks and merges on two levels (see Figure 1 phase B and C). While this provides opportunity for highly concurrent execution, it can create significant imbalance in the number and runtime of operations for a given page, due to their extremely varying complexity. Adding to this, the PDF format has inherent properties that make it very opaque. Therefore, there is no practical way to estimate the complexity and resource demand required for processing ahead of execution time. From an architecture perspective, the above is suggesting an approach which decomposes the full chain of operations and data into tasks. Such tasks can then be created and executed concurrently through an orchestration mechanism that is aware of their dependencies. We outline implementation options and examine the advantages and tradeoffs with different task granularity in Sections III and IV.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="48.31023406982422" y="254.90765380859375" width="251.92713165283203" height="200.893310546875">Machine-learning models: ML models play a powerful role in the quality of document conversion. To date, they outcompete any rule-based algorithm in document conversion tasks and even approach human-like accuracy in particular tasks such as layout analysis [16]. From a systems perspective, ML models bring an own set of challenges. First, solving the conversion task requires many different types of ML models as outlined earlier. Each of these models has different runtime characteristics and resource requirements in terms of CPU cores, memory demand, and accelerators. Furthermore, ML models evolve at a rapid pace. Consequently, to quickly adopt state-of-the-art ML models in production, our cloud service needs to be flexible with regard to integration of new models. Encapsulation of ML models into separate microservices, each serving on an own endpoint, can provide for both resource isolation and easy integration. We will discuss choices for ML serving and scaling in Section III.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="48.277976989746094" y="457.3270568847656" width="252.04792022705078" height="261.26983642578125">User requirements: The requirements outlined above are all system-internal requirements. From a user experience perspective, there are strong requirements to be met regarding the conversion speed and the response time. Our goal is to provide a cloud service which supports both bulk-conversion of huge document repositories, as well as ad-hoc conversion of individual documents. In the former case, a key concern is to achieve the highest (sustained) document throughput and ensure it scales proportionally to the compute resources. Importantly, this should allow to set a time-budget for a large conversion workload, e.g., a full online library, and infer the compute resource cost, or conversely, estimate the conversion time with a given resource budget. In the latter case, the primary objective is to achieve the shortest time-tosolution (TTS), allowing for an interactive user experience. Here it is important to note that the smaller a workload is (e.g., one document), the more challenging it becomes to achieve proper workload balancing in a distributed processing scheme. Both goals are reflecting in the scaling behavior of the system, which we will examine in Section IV-E. Additionally, we want to enable multi-tenant operation for many users on one application instance. Therefore, the service must provide</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="311.4620666503906" y="51.013671875" width="251.75686645507812" height="57.8692626953125">reasonable fairness when working at full capacity and multiple users each submit a conversion job. That means, submitted conversion jobs cannot be simply processed serially, but the service should allow to schedule multiple jobs concurrently with short delay.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="311.2581481933594" y="110.97198486328125" width="252.04684448242188" height="117.67205810546875">Evaluation dimensions: In addition to functional, technical, and experience requirements, we also need to consider performance evaluation metrics, which typically fall into three dimensions: speed, resource cost, and quality. In this paper, we will not focus on conversion quality, since it is directly determined by the choice of models and their accuracy. Model performance for different tasks is backed by many peerreviewed results [16]. Instead, this paper will focus on speed and resource cost, and how they correlate given a fixed system configuration with selected state-of-the-art models.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="3" x="391.7604064941406" y="238.47418212890625" width="91.01919555664062" height="10.035888671875">III. SYSTEM DESIGN</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="311.3281555175781" y="254.45391845703125" width="251.71353149414062" height="57.838653564453125">Having established the problem domain, requirements, and objectives, this section will outline and reflect on the fundamental application architecture of our document conversion service. Further, we establish a distributed task orchestration mechanism and discuss aspects of its implementation.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="3" x="310.8269958496094" y="322.2169189453125" width="112.50296020507812" height="9.917510986328125">A. Application architecture</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="310.82159423828125" y="337.5630187988281" width="252.5687255859375" height="237.43284606933594">Two fundamental decisions to be made prior to any implementation are the technology stack and architecture patterns to use. Given its clear dominance in virtually every contribution by the ML community, its proven utility in data-science tasks and the broad support in webservice frameworks [17]-[19], we chose python as the primary implementation language. Another priority we set is to work close to the bare kubernetes stack, in order to exercise lower-level control over the workload distribution, scaling, and resource creation. For this reason, we ruled out full-fledged data engines (e.g., Apache Spark [20]) and avoided proprietary or vendor-specific tools. The other critical decision regards the application architecture. Here, one can find fundamentally different options, depending on the type and volume of data, their processing complexity, and the consumption modes. As outlined in section II, we expect high-volume workloads which can be partitioned horizontally and processed in parallel to a high degree. On the other hand, we want to satisfy expectations of short response times for ad-hoc conversion with small data volumes.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="3" x="311.12042236328125" y="576.4981384277344" width="252.16070556640625" height="142.09873962402344">For the latter case, an architecture optimized for real-time processing would appear to be a sensible choice. An example for this is a microservice-based application with a user-facing, synchronous REST API and a backend which implements the document processing through a chain of remote-procedurecalls (RPC) between these microservices. With microservice replication, backed by sufficient compute resources or elastic cloud infrastructure, responsive operation could be upheld even for several concurrent users. Still, this approach would certainly fail to scale to high-volume workloads such as document repositories or libraries, especially in the case where the service is used for ad-hoc conversion and bulk conversion</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="48.4344596862793" y="50.97381591796875" width="251.58711624145508" height="82.141357421875">at the same time. Given a bulk conversion workload in the order of hundreds of documents, the client requests would soon stack up and cause congestion, forcing the system to deny more requests. Dynamically, let alone spontaneously, scaling the microservice replication to a level which can absorb this would be extremely challenging in terms of resource management and also be cost-prohibitive.</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="48.089111328125" y="302.183837890625" width="252.02978515625" height="71.3607177734375">Fig. 2. Architecture diagram of our conversion service. User requests for document conversion are handled by a REST API service, which can dispatch workloads asynchronously to the compute infrastructure through a queueing mechanism. Workers pick up queued tasks from a message broker and store the results for later retrieval on a document database and cloud object storage. The ML models are served through separate microservices, which are consumed by workers when executing the document conversion pipeline.</bbox>
+</span></p>
+<p><span info="figure" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="49.136478424072266" y="148.34423828125" width="250.42693710327148" height="141.5357666015625">Fig. 2. Architecture diagram of our conversion service. User requests for document conversion are handled by a REST API service, which can dispatch workloads asynchronously to the compute infrastructure through a queueing mechanism. Workers pick up queued tasks from a message broker and store the results for later retrieval on a document database and cloud object storage. The ML models are served through separate microservices, which are consumed by workers when executing the document conversion pipeline.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="48.17958450317383" y="385.6065979003906" width="252.21171188354492" height="332.990234375">For these reasons, we favored an asynchronous task-based queue-worker architecture suitable for high-volume batchprocessing, involving a task queue and containerized worker processes in the backend. Here, the user-facing API only accepts a document conversion request and enqueues a corresponding task on a message broker. Clients receive an immediate response with the task&#x27;s identifier, which can be used to retrieve the conversion result once the processing is completed. The worker processes attach to a task queue, consume tasks competitively, and write status information and task output to a (transient) results-backend and a persistent database (see Figure 2). Since large conversion workloads can be partitioned horizontally, workers are not required to communicate to each other or share resources. Hence, worker processes can be run isolated in containers and trivially replicated both inside and across cluster nodes through kubernetes. Tasks produced in a conversion job can reside on the task queue or on a worker process and eventually persist their state on the results-backend. Together, this ensures that a task remains traceable over its whole lifetime. As such, a queue-worker architecture protects the system from compute congestion through request overload, promises reliability, and enables simple scaling, at the cost of potentially delayed processing. However, queue mechanisms may also add I/O overhead and latency to the system, even in idle state. Consequently, TTS in ad-hoc conversion may be handicapped. To minimize such adverse effects, we chose to use online workers, which boot at service deployment time. This makes their lifetime independent of any conversion job</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="311.3877258300781" y="51.009033203125" width="251.80068969726562" height="69.9068603515625">and allows to pre-load the codebase, initialize resources, and keep internal state across tasks (such as cached connections and database drivers). Further, we chose to implement a lightweight library which enables low-latency task orchestration as well as fairness between multiple conversion jobs. Details are provided in the following subsections.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="311.074462890625" y="122.3900146484375" width="252.31610107421875" height="274.06561279296875">We introduce a notable exception from the queue-worker pattern for serving ML models. Instead of executing ML inference codes inside the workers, we externalize ML models as microservices with a simple REST API. The slightly less efficient interface and added I/O compared to direct codebinding and shared memory inside a worker process has proven to be a reasonable sacrifice to the significantly lower integration effort for new models. Ease of integration is a key requirement in the fast-evolving ML model landscape. Additionally, model serving can be resource-budgeted and scaled out independently from workers. The latter is particularly relevant for resource efficiency since our ML inference is computationally far more expensive and at the same time far less dynamic in memory use than other operations (e.g., PDF splitting, parsing, and merging). Leveraging this benefit would otherwise demand several different worker types and queues (one for each model), therefore increasing the complexity in the core system. In our service implementation, we wrap ML model codes in a python aiohttp webserver runtime and rely on knative serving for scaling and load-balancing [21]. This compares well to the technology used in popular ML serving frameworks such as ray.io 7, Seldon Core 8, or TensorFlow Serving 9.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="4" x="311.4614562988281" y="403.59429931640625" width="139.78366088867188" height="9.756500244140625">B. Task orchestration architecture</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="311.1457214355469" y="418.3246765136719" width="252.55191040039062" height="117.81512451171875">We define one conversion job as one (asynchronous) call to our service&#x27;s API endpoint, which may request conversion of any number and length of PDF files. To organize the operations within a conversion job, we define tasks. A task is defined by a code function which performs an operation, by the data it processes, and an identifier which makes it traceable across the backend architecture. All tasks belong to a conversion job, which itself acts as the root-task. Tasks will be executed on the workers and cover all operations, with the exception of ML model inference.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="311.1079406738281" y="537.610595703125" width="253.21194458007812" height="141.86222076416016">Obviously, implementing the pipeline outlined in Figure 1 in a purely serial fashion, meaning as a single task for each conversion job, would not promise any reasonable efficiency, even if multiple jobs were processed in parallel on different workers. To use available cluster resources efficiently, we focus on two strategies in particular. First of all, we try to balance the workload distribution evenly. Therefore, we split the conversion jobs into smaller tasks, which can be processed independently on different workers. Secondly, we strive to avoid that workers are underutilizing CPU resources while waiting for I/O-bound operations, such as reading and writing files, database transactions, or network requests to the ML</bbox>
+</span></p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="319.8242492675781" y="688.7655792236328" width="62.508758544921875" height="9.67486572265625">7https://www.ray.io</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="319.3559875488281" y="699.8570861816406" width="189.97109985351562" height="8.449119567871094">8https://www.seldon.io/solutions/open-source-projects/core</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="4" x="319.450927734375" y="709.1558532714844" width="147.20736694335938" height="9.010604858398438">9https://www.tensorflow.org/tfx/guide/serving</bbox>
+</p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="48.48017501831055" y="50.8818359375" width="251.54130935668945" height="22.13604736328125">models. Therefore, we enable concurrency between multiple tasks on the same worker.</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="48.30402374267578" y="400.83648681640625" width="251.85430145263672" height="44.186065673828125">Fig. 3. Sketch of workload distribution schemes on the document-level (top) and page-level (bottom). A conversion job is submitted at time t0. Tasks are produced and consumed by the workers through the task queue. The queue drains at time td. Sustained throughput is upheld until the first worker finds no more work (tw). The job only finishes after completion of all tasks (TTS).</bbox>
+</span></p>
+<p><span info="figure" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="48.70675277709961" y="83.3349609375" width="250.93149185180664" height="302.90679931640625">Fig. 3. Sketch of workload distribution schemes on the document-level (top) and page-level (bottom). A conversion job is submitted at time t0. Tasks are produced and consumed by the workers through the task queue. The queue drains at time td. Sustained throughput is upheld until the first worker finds no more work (tw). The job only finishes after completion of all tasks (TTS).</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="48.40557861328125" y="457.95574951171875" width="251.6990966796875" height="165.255126953125">Data partitioning and workload distribution: We explore two schemes for partitioning data and forming tasks in a conversion job: a) per-document and b) in equal-sized batches of pages, across document boundaries. In the former case, each document contained in a conversion job is fully processed into the corresponding JSON output on its own subtask, which we further refer to as the document-level distribution scheme. In the latter case, we further increase granularity by producing tasks for equal-sized batches of pages, further referred to as page-level distribution scheme (see Fig. 3). As sketched out, we expect to see stronger workload imbalance in the document-level distribution scheme, leading to underutilization of workers in the tail part of a conversion job (from tw until TTS).</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="48.410247802734375" y="624.775146484375" width="251.7591552734375" height="94.24468231201172">A conversion job using the document-level distribution scheme consists of N + 1 tasks for N PDF documents, where the root task has the responsibility of iterating over the data source and submitting one task for every document to the queue. While the document-level scheme can be implemented rather straightforward without any dependencies between tasks, the page-level scheme introduces significantly more complexity. It becomes evident from Fig. 1 that some</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="311.0123291015625" y="51.376953125" width="252.3880615234375" height="200.9681396484375">stages in the pipeline require to work on the full document (e.g., merging pages into the full document JSON output and exporting to the target), while others can be run pageby page (e.g., PDF parsing and applying ML models). We therefore chose to define specialized tasks responsible for each processing stage, which depend on the results of tasks from the preceding stage. Hence, many tasks need to be produced on the fly and awaited at multiple points from other tasks. Their count depends on factors determined by the PDF content. Another consequence is that partial results from each task need to be stored intermediately for downstream tasks to be picked up. Since downstream tasks may schedule on any worker in any node, this incurs additional data transmission to and from a database or object storage. This particular requirement is not present in the document-level pipeline, because all intermediate data can remain worker-local until a document is fully converted.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="311.13946533203125" y="254.78472900390625" width="252.2388916015625" height="213.48818969726562">Task concurrency: Keeping allocated cluster resources well saturated, while also not overbooking them, is key to efficient resource usage and high throughput in document conversion. The operations in the conversion pipeline can be roughly divided into those primarily compute-bound and primarily I/Obound. Examples for the former are parsing PDF contents, rendering an image of a PDF page, applying ML models or OCR. Examples for the latter are retrieving a PDF file over the network, unpacking an archive, exporting to a target database, or storing and fetching intermediate task results. A feasible approach we found is to interleave I/O-bound and computebound operations on the same worker, while allowing only one compute-bound operation to execute at the same time. Thus, precisely saturating resources on a cluster node turns into a matter of monitoring resource usage of workers under load and adjusting the amount of worker processes deployed on each node accordingly. Concrete evidence of this is presented in section IV-D.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="311.09454345703125" y="470.928466796875" width="252.1807861328125" height="165.20741271972656">We evaluated and discarded multiple implementation options to achieve interleaving, such as threading and explicit callback-passing code. Eventually, we settled on implementing all task code in python asyncio 10 co-routines, which run in an asynchronous event loop. This cooperative concurrency scheme is more efficient compared to launching and managing threads, but it requires a different coding paradigm. Any active task arriving at code points which require to wait for I/O can choose to suspend and return control to the asyncio event loop, and resume at a later point after its waiting condition has been fulfilled. Compute-intense tasks may fill the waiting time and remain in control of execution until they are completed. As such, no second compute-intense task can compete for resources in the same worker process.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="311.3258361816406" y="638.5142669677734" width="252.09426879882812" height="58.13262939453125">Dynamic task orchestration: Realising the dynamic traits of the proposed task distribution schemes prompted us to find an efficient mechanism to produce (sub-)tasks, submit these to the task queue, and wait for their completion during the pipeline execution. In the context outlined above, this demands for a</bbox>
+</span></p>
+<p class="page-footer" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="5" x="319.9480285644531" y="708.599494934082" width="152.59982299804688" height="9.567024230957031">10https://docs.python.org/3/library/asyncio.html</bbox>
+</p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="48.43075942993164" y="51.00506591796875" width="251.71929550170898" height="33.96783447265625">task distribution code which can itself run inside an asyncio event-loop, such that in-worker concurrency between tasks can be leveraged.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="48.35416793823242" y="87.0006103515625" width="251.9188117980957" height="333.0343017578125">Several task distribution libraries have emerged in the community for different requirements and use-cases, for instance, ray.io, Celery11, Dramatiq12, or Apache Beam13. To our surprise, none of the available options could meet our needs, since distribution and execution of asynchronous co-routines as tasks is widely unsupported. Few attempts to provide this capability have remained experimental and are poorly maintained or abandoned [22], [23]. Therefore, we decided to implement a custom library to orchestrate asynchronous tasks, which we make available as open source under the name Mognet 14. Fundamentally, it allows to create worker processes that initialize an asyncio event loop and attach to an amqp 15 message broker and a redis 16 instance for storage of every task&#x27;s status. A worker process subscribes to a queue and fetches up to X tasks at once, which are then executed on the worker&#x27;s event loop concurrently. To support the dynamic nature of our pipeline, we explicitly allow any task to produce (many) subtasks and await their completion. Subtasks are submitted to the task queue, like any task. Since all tasks are asynchronous co-routines, waiting for subtasks is a nonblocking and cheap operation. It is worth mentioning that waiting for subtasks creates a risk for deadlocks. A task may wait for subtasks forever while they cannot be scheduled on any worker, because all workers are occupied up to their limit X. To circumvent this situation, the local limit X of concurrently scheduling tasks on a worker is incremented by 1 each time a task produces any number of subtasks, and decremented by 1 again when the producing task completes.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="48.22650909423828" y="421.9274597167969" width="252.00444793701172" height="225.99668884277344">Additionally to the orchestration capability outlined above, we exploit the property that such tasks which produce subtasks are very cheap to suspend and reactivate for another significant benefit. Instead of producing and enqueueing every possible subtask at once, the producing task may instead iteratively enqueue new subtasks only as previous subtasks finish. This allows precise control over how many subtasks are submitted from a producer task at once and therefore enables to keep the task queue short. A concrete example for this case is the root task of a conversion job, which produces one subtask for each document. Given a number of N workers, enqueueing much more than N tasks at once is to no benefit for distributed processing. Conversely, it can delay the scheduling of competing conversion jobs. Enqueueing the N +1 st document subtask only when the first document subtask finishes instead gives opportunity for better interleaving of tasks belonging to competing conversion jobs on the queue. The same principle translates to the level of pages inside one document. We demonstrate the effect of this strategy in section IV-F.</bbox>
+</span></p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="56.93403625488281" y="658.9928436279297" width="81.98472595214844" height="9.857597351074219">11https://docs.celeryq.dev</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="56.93403625488281" y="669.3526763916016" width="65.21418762207031" height="9.361770629882812">12https://dramatiq.io</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="56.93403625488281" y="680.0065536499023" width="82.68301391601562" height="8.570899963378906">13https://beam.apache.org</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="56.93403625488281" y="689.8738479614258" width="141.9469451904297" height="8.566612243652344">14https://github.com/DS4SD/project-mognet</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="56.93403625488281" y="700.3783187866211" width="77.54536437988281" height="8.470657348632812">15https://www.amqp.org</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="56.93403625488281" y="709.0029067993164" width="52.312042236328125" height="9.163566589355469">16https://redis.io</bbox>
+</p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="6" x="400.30133056640625" y="50.9644775390625" width="73.88055419921875" height="10.098388671875">IV. EVALUATION</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="311.3408508300781" y="66.78302001953125" width="251.99087524414062" height="57.63189697265625">To evaluate the real-world performance and behavior of our service, we outline our benchmark environment and characterize a representative test dataset used for conversion. In the following, measurements and observations regarding the scalability and multi-user fairness are presented and discussed.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="6" x="310.8877868652344" y="133.91693115234375" width="45.085052490234375" height="9.56884765625">A. Metrics</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="311.2364501953125" y="148.72943115234375" width="252.22332763671875" height="297.2584533691406">Following from the design goals, we establish several evaluation metrics to characterize the scaling behavior. The timeto-solution (TTS) for a particular conversion job is defined as the time difference between the submission of the first batch of documents and the retrieval of the last converted document. The throughput is defined as the number of processed pages per unit of time. Notice that the number of processed documents per unit of time is not a good metric as documents have a variable number of pages. The effective throughput is computed by determining the number of processed pages from the input dataset and dividing it by the TTS. The sustained throughput is defined as the number of processed pages from the input dataset divided by the time in which all compute resources are busy processing (from t0 until tw, see Fig. 3). Importantly, the effective throughput will be dependent on the data volume of the conversion job, while the sustained throughput is independent of the data volume of the conversion job. In the limit of a very large conversion job, the effective throughput will asymptotically reach the sustained throughput, as the time proportion of partially idle worker state at the end of a job will be negligible compared to the time in saturated worker state. Additionally, we observe the serial time of the benchmark conversion job. It is defined as the sum of all task runtimes in each conversion job and, in the ideal case, it is constant unless a resource bottleneck is present.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="6" x="311.45697021484375" y="455.32696533203125" width="69.46224975585938" height="9.731781005859375">B. Infrastructure</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="311.3114318847656" y="470.1752014160156" width="252.12081909179688" height="106.69270324707031">For our benchmark environment, we created a managed OpenShift cluster (version 4.8, using kubernetes 1.21) hosted on IBM Cloud with default settings and we added a pool of virtualized dedicated cluster nodes. Each cluster node provides 16 CPU cores and 16 GB RAM. This choice of nodes falls well within the band of optimal resources-to-cost ratio on most cloud infrastructure providers. To enable ML model serving, we installed knative serving through the OpenShift serverless operator [21].</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="311.489501953125" y="578.0975494384766" width="251.75921630859375" height="58.029296875">Data blobs (i.e., source documents and conversion output) and intermediate results (e.g., model predictions) are stored on managed instances of IBM Cloud Object Storage (COS) and IBM Cloud MongoDB, respectively. All resources are hosted in an IBM Cloud location in Frankfurt, Germany.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="6" x="311.97802734375" y="645.2684020996094" width="64.56637573242188" height="9.9302978515625">C. Test Dataset</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="6" x="311.4098815917969" y="660.3716583251953" width="251.93008422851562" height="58.225196838378906">To obtain a realistic test dataset, we compiled a subset of 8053 PDF documents from arXiv (consecutive submissions 2106.00001 to 2106.08072, omitting those that do not provide a PDF). It contains 156 529 pages and measures 20.7 GB in binary size. We picked this dataset as it is available at</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="48.39362335205078" y="48.56976318359375" width="251.87389373779297" height="50.33636474609375">minimal cost 17 and fully reproducible. Furthermore, the arXiv is a representative dataset, as it is one of the main open-source libraries for disseminating scientific preprint articles. Detailed characteristics of the test dataset are shown in Fig. 4.</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="102.8426513671875" y="372.23712158203125" width="140.18565368652344" height="8.6763916015625">Fig. 4. Characteristics of the test dataset.</bbox>
+</span></p>
+<p><span info="figure" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="59.584068298339844" y="112.74395751953125" width="227.57251739501953" height="248.19839477539062">Fig. 4. Characteristics of the test dataset.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="48.44990921020508" y="394.12744140625" width="251.73667526245117" height="106.23538208007812">It is worth noting that we did not cherry-pick the documents in the dataset in any way to best reflect a real-world situation. We have observed that a fraction of documents reproducibly fail to convert or cause outliers in task runtimes. Three documents consistently fail to convert because of PDF interpretation issues. In another 160 documents, a total of 504 pages could not be converted due to memory constraints or rendering problems, which is a typical fraction that we also observed with other types of datasets.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="7" x="48.27383804321289" y="514.7048645019531" width="86.47813034057617" height="9.961669921875">D. Application setup</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="48.31428527832031" y="531.6997680664062" width="252.02748107910156" height="165.466064453125">We evaluate two different profiles for the deployment and configuration of our system components to understand the impact of concurrent task interleaving on resource efficiency. For both profiles, we take the resource budget of a cluster node as the basis. To decide how many pod replicas of workers and ML models one can safely schedule on a cluster node without overbooking resources, we elected their average memory footprint under load as the primary criterion. Our target was to occupy 75% of the node memory, leaving 25% as overhead. This choice was made since memory, in contrast to CPU cores, cannot be oversubscribed and therefore strongly determines the required cost. Average memory footprint and CPU usage of the components, observed under load, are shown in table I.</bbox>
+</span></p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="56.933998107910156" y="708.4043960571289" width="117.2594223022461" height="9.762062072753906">17https://arxiv.org/help/bulk data s3</bbox>
+</p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="330.4039306640625" y="50.64501953125" width="213.93524169921875" height="28.02972412109375">TABLE I Typical resource usage of workers and ML models under load in deployment profiles A and B.</bbox>
+</span></p>
+
+
+<table data-page="7" data-min-x="339.7815856933594" data-min-y="89.4017333984375" data-min-width="183.72726440429688" data-min-height="77.75457763671875" data-max-x="339.7815856933594" data-max-y="89.4017333984375" data-max-width="183.72726440429688" data-max-height="77.75457763671875">
+  <tr>
+    <td  rowstart="1" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="1" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="1" colstart="3" rowspan="1" colspan="2" label-class="body" label="" class="label-body"><span><bbox page="7" x="461.5480041503906" y="90.52923583984375" width="35.41912841796875" height="7.12530517578125">component</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="2" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="2" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="2" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="441.1610107421875" y="100.39227294921875" width="22.41192626953125" height="7.12530517578125">worker</bbox></span></td>
+    <td  rowstart="2" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="482.68524169921875" y="100.39227294921875" width="34.669921875" height="7.12530517578125">ML model</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="3" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="3" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="387.4590148925781" y="110.25628662109375" width="27.44903564453125" height="7.12530517578125">Memory</bbox></span></td>
+    <td  rowstart="3" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="441.1610107421875" y="110.2562255859375" width="27.146148681640625" height="7.12530517578125">450 MB</bbox></span></td>
+    <td  rowstart="3" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="482.6852111816406" y="110.2562255859375" width="27.146148681640625" height="7.12530517578125">500 MB</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="4" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="345.7040100097656" y="119.93927001953125" width="29.800201416015625" height="7.12530517578125">Profile A</bbox></span></td>
+    <td  rowstart="4" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="387.4590148925781" y="120.11920166015625" width="15.5018310546875" height="7.12530517578125">CPU</bbox></span></td>
+    <td  rowstart="4" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="441.1610107421875" y="120.1192626953125" width="29.569061279296875" height="7.12530517578125">0.4 cores</bbox></span></td>
+    <td  rowstart="4" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="482.6852111816406" y="120.1192626953125" width="29.569061279296875" height="7.12530517578125">0.7 cores</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="5" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="5" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="387.4590148925781" y="129.98223876953125" width="41.74737548828125" height="7.12530517578125">Replica ratio</bbox></span></td>
+    <td  rowstart="5" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="441.1610107421875" y="129.98223876953125" width="3.98504638671875" height="7.12530517578125">1</bbox></span></td>
+    <td  rowstart="5" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="482.68524169921875" y="129.98223876953125" width="3.98504638671875" height="7.12530517578125">1</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="6" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="6" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="387.4590148925781" y="139.84527587890625" width="27.44903564453125" height="7.12530517578125">Memory</bbox></span></td>
+    <td  rowstart="6" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="441.1610107421875" y="139.84527587890625" width="27.146148681640625" height="7.12530517578125">700 MB</bbox></span></td>
+    <td  rowstart="6" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="482.6852111816406" y="139.84527587890625" width="27.146148681640625" height="7.12530517578125">500 MB</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="7" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="345.7040100097656" y="149.52825927734375" width="29.361846923828125" height="7.12530517578125">Profile B</bbox></span></td>
+    <td  rowstart="7" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="387.4590148925781" y="149.708251953125" width="15.5018310546875" height="7.12530517578125">CPU</bbox></span></td>
+    <td  rowstart="7" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="441.1610107421875" y="149.708251953125" width="29.569061279296875" height="7.12530517578125">1.2 cores</bbox></span></td>
+    <td  rowstart="7" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="482.6852111816406" y="149.708251953125" width="29.569061279296875" height="7.12530517578125">0.7 cores</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="8" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body">&nbsp;</td>
+    <td  rowstart="8" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="387.4590148925781" y="159.57122802734375" width="41.74737548828125" height="7.12530517578125">Replica ratio</bbox></span></td>
+    <td  rowstart="8" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="441.1610107421875" y="159.57122802734375" width="3.98504638671875" height="7.12530517578125">1</bbox></span></td>
+    <td  rowstart="8" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="7" x="482.68524169921875" y="159.57122802734375" width="3.98504638671875" height="7.12530517578125">4</bbox></span></td>
+  </tr>
+</table>
+
+
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="311.3036804199219" y="191.52105712890625" width="251.91226196289062" height="81.73590087890625">In profile A, we simulate a service which is not capable of interleaving concurrent tasks in the same worker process. Thus, we create equal counts of worker replicas and ML model replicas, and effectively disable worker-internal task concurrency by fetching only one task at a time from the queue. We schedule 17-18 pods (8-9 each for worker and ML model) per cluster node within the given memory budget.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="311.3281555175781" y="275.677734375" width="251.93087768554688" height="93.49777221679688">In profile B, we intend to optimize the conversion throughput. With the prior knowledge that ML model inference is the computationally most expensive operation in the pipeline, we create worker replicas and ML model replicas at a ratio of 1:4, and allow four concurrent tasks per worker to interleave. This allows to fit 15 pods (3 workers, 12 ML models) per cluster node, since now workers require more memory on average to interleave four tasks at a time (see table I).</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="311.212890625" y="371.18927001953125" width="251.86798095703125" height="58.161834716796875">Further, we do not enforce limits on CPU usage per worker or ML model replica through kubernetes. Worker processes are naturally bounded to a single core due to python&#x27;s global interpreter lock [24]. Each replica of the ML models is configured to use only one thread to avoid CPU congestion.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="311.42388916015625" y="431.559814453125" width="251.78302001953125" height="93.58792114257812">As for the ML models, we deliberately set up a rather expensive object-detection network (Faster R-CNN with ResNet50 backbone, 63M weights) [25] for layout segmentation, which we feed PDF pages rasterized to 1025 × 1025 pixels. Bare inference time using one CPU core is in the order of 3 seconds. The structure of identified tables is reconstructed by a secondary model, here using a very cheap topological algorithm with negligible resource demand.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="7" x="311.3117980957031" y="536.5572357177734" width="56.84527587890625" height="9.72235107421875">E. Scalability</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="311.31585693359375" y="552.4966583251953" width="251.8056640625" height="58.03007507324219">To evaluate the scaling behavior of the service, we measure the runtime and throughput of exactly one conversion job at a time, repeated with increasing node pool sizes and matching application deployment scale on the benchmark environment outlined above.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="7" x="310.9671630859375" y="613.0776977539062" width="252.36260986328125" height="105.51904296875">Benchmark series and protocol: All evaluation metrics defined above are measured repeatedly in both deployment profiles after scaling the pool size to 12, 48, 96, and 192 cluster nodes (using 192, 768, 1536, and 3072 CPU cores). The scaling level of 12 cluster nodes acts as the baseline measurement to determine the speedup for the higher scales. On a second dimension, the whole test series is carried out separately for both task distribution schemes (document-level and page-level).</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="8" x="48.394744873046875" y="199.0760498046875" width="514.8161926269531" height="17.1715087890625">Fig. 5. Scaling of time-to-solution (A), effective throughput and sustained throughput on document-level distribution scheme (B), page-level distribution scheme (C) in both deployment profiles with node count. Gray diagonals indicate theoretical linear scaling.</bbox>
+</span></p>
+<p><span info="figure" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="8" x="49.37770080566406" y="49.9676513671875" width="506.46861267089844" height="138.26220703125">Fig. 5. Scaling of time-to-solution (A), effective throughput and sustained throughput on document-level distribution scheme (B), page-level distribution scheme (C) in both deployment profiles with node count. Gray diagonals indicate theoretical linear scaling.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="8" x="48.243141174316406" y="239.36004638671875" width="252.15691375732422" height="296.4526062011719">Observations in scaling behavior: Several observations can be made in the context of our scaling benchmark series, as shown in Fig. 5. First of all, we find that the TTS at the lowest scale (12 nodes) is very similar across both deployment profiles and task distribution schemes. As we scale up the number of cluster nodes, we first recognize that both distribution schemes achieve reasonable speedup in TTS. However, the TTS in the document-level distribution scheme beats the TTS in page-level distribution scheme by a growing margin at increasing scales. This observation also mirrors in the effective throughput. At the largest scale (192 nodes), the achieved speedup in TTS starts to tail off to different degrees in both schemes, irrespective of the deployment profile. Our test dataset converts within 17 minutes in the best case (document-level scheme, profile B) and 25 min in the worst case (page-level scheme, profile A). Contrary to our theoretical considerations, the loss in scaling efficiency affects the pagelevel scheme much stronger than the document-level scheme. Deeper investigation revealed that two different causes are responsible for the observed loss in scaling efficiency. In the document-level distribution scheme, long documents increasingly dominate the TTS of the full conversion job, some of which take over 14 minutes to convert alone (see Fig 6). Thus, TTS would be lower-bounded at 14 minutes even with infinite resources.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="8" x="48.37654113769531" y="540.7966461181641" width="252.0185089111328" height="177.80001831054688">In the page-level distribution scheme, despite the finegrained workload balancing achieved through equal-sized batches of pages, we find that the amount of I/O created by storing and loading intermediate task results creates a scaling bottleneck. Our MongoDB instance cannot keep up with the concurrent transaction load. This bottleneck is completely absent in the document-level distribution scheme since it&#x27;s implementation creates no database transactions at all. Further, interleaving tasks on the same worker (profile B) does not demonstrate significant benefit to TTS or effective throughput over the non-interleaving setup (profile A) in either of the distribution schemes. A different picture shows when looking at the sustained throughput. In the document-level distribution scheme, we are observing even slightly better-than-linear scaling, which is clearly distinct from the effective throughput.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="8" x="311.2167053222656" y="239.081787109375" width="252.33059692382812" height="165.22476196289062">At first glance, this artifact may seem questionable. However, deeper verification shows two contributing factors to this. The first is owed to small imperfections in the load-balancing of requests to our ML model replicas. The fewer ML model replicas exist, the more pronounced is the impact of an unbalanced distribution of requests to those. Relatively speaking, a larger fraction of requests will be subject to additional waittimes for the response. The second factor is a peculiarity of our worker implementation. To regularly clean up the excess memory allocated (but not used) in the python runtime, worker pods reboot after every 64 completed (document-level) tasks. This causes a delay of approximately 10 seconds each time. In each conversion job, such reboots occur more frequently when fewer workers need to consume more tasks. Therefore, we</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="8" x="311.0400390625" y="664.3288803100586" width="252.315673828125" height="53.725669860839844">Fig. 6. Active tasks over job runtime (top) and time schedule in 70 of 834 workers (bottom), using document-level scheme, profile A on 96 nodes. Each red bar marks the runtime of one task, equal to one document. The job completes only 14 minutes after the first worker finds no more work due to few, long documents in the tail. An anomaly around 7 min is caused by worker restarts.</bbox>
+</span></p>
+<p><span info="figure" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="8" x="338.3061218261719" y="427.435791015625" width="196.53036499023438" height="226.02455139160156">Fig. 6. Active tasks over job runtime (top) and time schedule in 70 of 834 workers (bottom), using document-level scheme, profile A on 96 nodes. Each red bar marks the runtime of one task, equal to one document. The job completes only 14 minutes after the first worker finds no more work due to few, long documents in the tail. An anomaly around 7 min is caused by worker restarts.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="48.553157806396484" y="51.10498046875" width="251.71808242797852" height="21.91290283203125">see sustained throughput improve overproportionally at higher scales.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="48.269405364990234" y="74.94281005859375" width="251.9941749572754" height="165.56524658203125">The significant difference between sustained and effective throughput in the document-level distribution scheme is clearly explained through the workload imbalance between workers, as shown in figure 6. Moreover, we find that deployment profile B, which exploits in-worker task concurrency, achieves consistently higher sustained throughput than profile A with the same total amount of resources. At the highest scale of 192 nodes, sustained throughput of 296 pages/second is achieved in profile B, compared to 220 pages/second in profile A. In the page-level distribution scheme, effective and sustained throughput remain much closer together and follow similar curves across scale levels. While this indicates better workload balancing, both metrics are equally impacted by the I/O bottleneck described before.</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="48.1951904296875" y="414.4132995605469" width="251.82696533203125" height="17.375244140625">Fig. 7. Measured serial times of operations in the document-le v el pipeline, profile A, across all scales.</bbox>
+</span></p>
+<p><span info="figure" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="62.83598327636719" y="253.278564453125" width="218.5729217529297" height="149.63998413085938">Fig. 7. Measured serial times of operations in the document-le v el pipeline, profile A, across all scales.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="48.19801712036133" y="446.3453369140625" width="251.88224411010742" height="141.4225311279297">An important conte xt for the interpretation of the observ ations abov e is pro vided by the serial time, dif ferentiated by processing stage (see figure 7). W e see consistent serial times on every tested scaling le v el in the document pipeline, which confirms that no resource congestion or bandwidth limitation is present. In the page-le v el pipeline (not sho wn), serial times, in particular for upload and mer ge operations, increase noticeably on the lar gest scale. Finally, we clearly recognize that applying ML models is the most time consuming operation, responsible for approximately 76% (page-le v el scheme) to 84% (document-le v el scheme) of the task runtimes in our test conversion job.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="9" x="48.555931091308594" y="597.4826965332031" width="46.74412536621094" height="9.738021850585938">F. Fairness</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="48.170166015625" y="612.5364379882812" width="252.17044067382812" height="106.06044006347656">To understand both ho w f ast and ho w f air our service handles multiple concurrent con v ersion jobs, we analyze an extreme case. While saturating our service with the con version of our benchmark dataset, we submit a second con version job with a single a v erage-length document (15 pages) one, two, and three minutes later. W e measure the TTS of the single-document job repeatedly and compare it to the TTS of the same job submitted on an idle sys tem. This e xperiment is carried out at a scale of 48 nodes and repeated for both</bbox>
+</span></p>
+<p><span info="caption" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="325.8583679199219" y="50.78179931640625" width="222.95932006835938" height="27.78271484375">TABLE II TTS for a 15-page document in idle and busy system states. Values represent mean ± standard deviation in seconds.</bbox>
+</span></p>
+
+
+<table data-page="9" data-min-x="337.5058898925781" data-min-y="91.78521728515625" data-min-width="199.43783569335938" data-min-height="67.52459716796875" data-max-x="337.5058898925781" data-max-y="91.78521728515625" data-max-width="199.43783569335938" data-max-height="67.52459716796875">
+  <tr>
+    <td  rowstart="1" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="343.7909851074219" y="103.44122314453125" width="20.8099365234375" height="7.12530517578125">profile</bbox></span></td>
+    <td  rowstart="1" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="376.5559997558594" y="103.44122314453125" width="39.539642333984375" height="7.12530517578125">system state</bbox></span></td>
+    <td  rowstart="1" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="428.04998779296875" y="91.78521728515625" width="83.23257446289062" height="18.78131103515625">distribution scheme document-level</bbox></span></td>
+    <td  rowstart="1" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="489.26800537109375" y="103.44122314453125" width="32.8765869140625" height="7.12530517578125">page-level</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="2" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="351.3190002441406" y="120.7862548828125" width="5.754425048828125" height="7.12530517578125">A</bbox></span></td>
+    <td  rowstart="2" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="376.5559997558594" y="115.49627685546875" width="14.8961181640625" height="18.78131103515625">idle busy</bbox></span></td>
+    <td  rowstart="2" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="428.04998779296875" y="115.49627685546875" width="41.95458984375" height="18.78131103515625">32.6 ± 1.1 114.9 ± 17.5</bbox></span></td>
+    <td  rowstart="2" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="489.26800537109375" y="115.49627685546875" width="41.95465087890625" height="18.78131103515625">26.3 ± 0.9 248.1 ± 17.3</bbox></span></td>
+  </tr>
+  <tr>
+    <td  rowstart="3" colstart="1" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="351.5379943847656" y="144.49725341796875" width="5.316070556640625" height="7.12530517578125">B</bbox></span></td>
+    <td  rowstart="3" colstart="2" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="376.5559997558594" y="139.207275390625" width="14.8961181640625" height="18.78131103515625">idle busy</bbox></span></td>
+    <td  rowstart="3" colstart="3" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="428.04998779296875" y="139.207275390625" width="41.95458984375" height="18.78131103515625">32.6 ± 0.2 109.6 ± 47.7</bbox></span></td>
+    <td  rowstart="3" colstart="4" rowspan="1" colspan="1" label-class="body" label="" class="label-body"><span><bbox page="9" x="489.26800537109375" y="139.207275390625" width="41.95465087890625" height="18.78131103515625">25.7 ± 0.7 220.4 ± 34.2</bbox></span></td>
+  </tr>
+</table>
+
+
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="311.5393981933594" y="196.9752197265625" width="251.49600219726562" height="21.79473876953125">deployment profiles and task distribution schemes. Results are shown in table II.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="311.518798828125" y="226.23443603515625" width="251.77532958984375" height="69.6715087890625">The single document converts with a reproducible TTS of 33s (document-level scheme) or 26s (page-level scheme). On a busy system, this increases by a factor of 3.5 (documentlevel scheme) or 7.5 (page-level scheme) on average, with a substantial standard deviation between 30% and 45% of the TTS.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="311.2087707519531" y="303.5202941894531" width="252.37612915039062" height="117.342529296875">One can draw multiple conclusions from these results. First, we see good evidence that our strategy to keep the length of the task queue short (see section III-B) pays off. Concurrent conversion workloads of very different volume are processed in a reasonably fair manner, all while avoiding the complexity of job priorities or separate queues. Still, the TTS on a busy system is significantly higher in the page-level distribution scheme, since the single-document conversion job produces a total of 12 tasks, which pass through the task queue, compared to only one in the document-level distribution scheme.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="311.0918884277344" y="428.1328125" width="252.23117065429688" height="225.28292846679688">Second, we find that the page-level distribution scheme on this 15-page document yields 20% lower TTS (1.25x speedup) than the document-level scheme in an idle system. Disregarding all non-parallelizable operations (upload, merge, and export), the theoretical speedup would be bounded at 4x for 15 pages, because we chose to configure our system to create tasks for batches of up to four pages. Dynamically deciding the optimum page-batch size based on the page count could improve this aspect. In reality, we must consider two factors: On one hand, profiling the page-level distribution scheme reveals that approximately one quarter of the total conversion job run-time is spent in the non-parallelizable operations for this document. On the other hand, the pagelevel distribution pays a high price on additional I/O, as shown earlier. In the observed case, it requires 12 distinct store and retrieve operations, while the document-level scheme requires only two. As such, TTS in ad-hoc conversion can profit from the page-level distribution scheme only with longer documents.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="9" x="311.41632080078125" y="660.4099578857422" width="251.8638916015625" height="58.186798095703125">Third, we find that the deployment profile (A or B) has no relevant impact on the measurements above. Processing 15 pages only utilizes a fraction of the available worker and ML model replicas here, which explains why no difference is observed.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="10" x="135.7737579345703" y="51.03826904296875" width="76.93025207519531" height="10.02362060546875">V. CONCLUSIONS</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="48.27351760864258" y="68.3385009765625" width="251.9209098815918" height="105.36248779296875">We have carefully established a scalable cloud service design for the task of document conversion and presented the impact of different workload distribution schemes and implementation options on both absolute speed and scaling behavior. With the best-performing setup, we achieve a sustained conversion throughput scaling linearly with the resource budget up to 192 nodes (equal to 3072 CPU cores and 3072 GB of memory). In practice, this allows us to convert over one million PDF pages per hour.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="48.11545181274414" y="175.8963623046875" width="252.0920066833496" height="117.67474365234375">An important lesson we learned is that distributing the workload more evenly at a page-level cannot compensate for the excess of I/O expenses and synchronization need it creates over document-level distribution. In terms of sustainable throughput, it ultimately steers into a scaling bottleneck. More efficient intermediate data storage and locality may push this bottleneck further up the scale, but it will eventually prevail. We find good potential in using page-level distribution, however, to achieve short response time in ad-hoc conversion of few documents.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="48.15998840332031" y="295.46624755859375" width="252.1317901611328" height="165.793701171875">To drive a production-grade deployment of our conversion service, we need to consider some important differences to the benchmark setup presented here. For cost reasons, it is highly advisable to rely on automatic scaling mechanisms. The ML model microservices can be easily transferred to a managed platform-as-a-service where the replicas can be dynamically scaled according to the request load without preallocating cluster infrastructure (e.g., Google App Engine18, IBM Cloud Code Engine19, or Amazon ECS20). Additionally, worker pods and even cluster nodes may be automatically added and removed based on the length of the task queue. In deployments for open audiences, we enforce strict timeouts on tasks to ensure that very heavy or even poisonous PDF files are not locking up resources forever.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="48.270416259765625" y="463.54693603515625" width="251.86474609375" height="189.31396484375">The investment of implementing all pipeline logic in asynchronous co-routines and developing a task distribution library which works natively within an event-loop has proven to be worthwhile. Distributing and executing code with dynamic subtasks and dependencies becomes very cheap and it helps to achieve fairness in multi-tenant usage with little effort and complexity. Additionally, it allows to write idiomatic code. It should be noted however that the efficiency advantage of interleaving tasks as proposed here depends significantly both on the amount of opportunity to avoid blocking I/O and on the proportion of compute-bound code executing in the workers. Externalizing the ML models as web-services has proven to be a sensible choice in this regard. Considering the large fraction of total compute-time spent in ML inference, investing effort into cheaper ML models will remain a top priority in our ongoing work.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="48.677181243896484" y="654.6515502929688" width="251.34466934204102" height="22.436363220214844">In the landscape of data-driven business, several applications share important properties with document conversion. One</bbox>
+</span></p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="56.933990478515625" y="688.7598419189453" width="120.71144104003906" height="9.953170776367188">18https://cloud.google.com/appengine</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="56.771034240722656" y="699.6996002197266" width="136.7348861694336" height="8.997856140136719">19https://www.ibm.com/cloud/code-engine</bbox>
+</p>
+<p class="footnote" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="56.5114860534668" y="708.6791076660156" width="96.2753791809082" height="9.487442016601562">20https://aws.amazon.com/ecs</bbox>
+</p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="311.1600341796875" y="51.10137939453125" width="252.29534912109375" height="141.46771240234375">such case is automated knowledge-base construction, where several data processing pipelines have been developed for extraction, normalization, and analysis of knowledge [26], often targeting specific domains like material sciences, geology, or biomedicine [27]-[31]. They commonly process complex or unstructured input data in bulk (e.g., literature, experiment reports, and instrument data), employ machine-learning (e.g., language understanding), and often require complex dynamic pipelines. As such, the insights presented and conclusions drawn in this paper would be of value for the design and validation of future work on scalable processing pipelines in the cloud.</bbox>
+</span></p>
+</section>
+<section>
+<h2><span class="title" info="subtitle_l1" ><span style="font-family:Times-Roman; color: rgb(0, 0, 0);"><bbox page="10" x="409.27691650390625" y="204.49884033203125" width="56.135467529296875" height="10.11126708984375">REFERENCES</bbox>
+</span></span></h2>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.9538879394531" y="223.20452880859375" width="247.35781860351562" height="53.82049560546875">[1] C. Gopal, C. L. Marshall, D. Vesset, N. Ward-Dutton, J. Hamel, R. Jyoti, P. Rutten, C. W. Olofson, J. Rydning, S. Rau, and J. Duke, &#x27;IDC FutureScape: Worldwide future of intelligence 2022 predictions,&#x27; International Data Group, Inc., Needham, MA, Research Report US47913321, Oct. 2021. [Online]. Available: https://www.idc.com/getdoc.jsp?containerId=US47913321</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.6709899902344" y="276.972412109375" width="248.56051635742188" height="44.900787353515625">[2] D. Vile, &#x27;The road to becoming a data driven business,&#x27; Freeform Dynamics Ltd., New Milton, United Kingdom, Research Report US47913321, Nov. 2020. [Online]. Available: https://www.freeformdynamics.com/wp-content/uploads/2020/11/ 2020-The road to becoming a data driven business.pdf</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.8007507324219" y="321.38787841796875" width="247.75265502929688" height="17.99365234375">[3] M. Aslett and N. Patience, &#x27;Data platforms market map 2021,&#x27; S&amp;P Global Market Intelligence, Tech. Rep., Sep. 2021.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.9143371582031" y="339.6887512207031" width="248.43460083007812" height="36.3931884765625">[4] G. Aggarwal. (2021, Jan.) How the pandemic has accelerated cloud adoption. Forbes. Jersey City, NJ. [Online]. Available: https://www.forbes.com/sites/forbestechcouncil/2021/01/15/ how-the-pandemic-has-accelerated-cloud-adoption</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.5485534667969" y="376.1524963378906" width="247.71829223632812" height="27.50653076171875">[5] &#x27;Enterprise survey series: DevOps and the cloud,&#x27; Evans Data Corporation, Santa Cruz, CA, Research Report, Aug. 2021. [Online]. Available: https://evansdata.com/reports/viewRelease.php?reportID=45</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.4762268066406" y="403.9768371582031" width="247.56039428710938" height="25.727752685546875">[6] J. Arundel and J. Domingus, Cloud Native DevOps with Kubernetes: Building, Deploying, and Scaling Modern Applications in the Cloud. Sebastopol, CA: O&#x27;Reilly Media, Apr. 2019.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.7942199707031" y="430.1007385253906" width="247.51870727539062" height="26.722869873046875">[7] H. Lin, P. Yang, and F. Zhang, &#x27;Review of scene text detection and recognition,&#x27; Archives of computational methods in engineering, vol. 27, no. 2, pp. 433-454, Apr. 2020.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.8462219238281" y="457.4815673828125" width="247.48446655273438" height="45.282440185546875">[8] Y. Xu, M. Li, L. Cui, S. Huang, F. Wei, and M. Zhou, &#x27;Layoutlm: Pre-training of text and layout for document image understanding,&#x27; in Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining, Aug. 2020, pp. 1192-1200. [Online]. Available: https://dl.acm.org/doi/10.1145/3394486.3403172</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="315.2979736328125" y="502.7886962890625" width="247.97503662109375" height="44.51332092285156">[9] B. Pfitzmann, C. Auer, M. Dolfi, A. Nassar, and P. W. Staar, &#x27;Doclaynet: A large human-annotated dataset for document-layout analysis,&#x27; in Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining, 2022, to be published. [Online]. Available: https://doi.org/10.1145/3534678.3539043</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="311.5765075683594" y="547.6309509277344" width="251.71292114257812" height="54.15309143066406">[10] N. Livathinos, C. Berrospi, M. Lysak, V. Kuropiatnyk, A. Nassar, A. Carvalho, M. Dolfi, C. Auer, K. Dinkla, and P. Staar, &#x27;Robust pdf document conversion using recurrent neural networks,&#x27; Proceedings of the AAAI Conference on Artificial Intelligence, vol. 35, no. 17, pp. 15 137-15 145, May 2021. [Online]. Available: https://ojs.aaai.org/index.php/AAAI/article/view/17777</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="311.31439208984375" y="601.3722381591797" width="252.04888916015625" height="44.623443603515625">[11] X. Zheng, D. Burdick, L. Popa, X. Zhong, and N. X. R. Wang, &#x27;Global table extractor (gte): A framework for joint table identification and cell structure recognition using visual context,&#x27; in Proceedings of the IEEE/CVF winter conference on applications of computer vision, 2021, pp. 697-706.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="311.87689208984375" y="646.4306030273438" width="251.44097900390625" height="36.32270812988281">[12] A. Nassar, N. Livathinos, M. Lysak, and P. Staar, &#x27;Tableformer: Table structure understanding with transformers,&#x27; IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Jun. 2022. [Online]. Available: https://arxiv.org/abs/2203.01017</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="10" x="311.6574401855469" y="682.9052047729492" width="252.23245239257812" height="35.26049041748047">[13] N. Siegel, N. Lourie, R. Power, and W. Ammar, &#x27;Extracting scientific figures with distantly supervised neural networks,&#x27; in Proceedings of the 18th ACM/IEEE on joint conference on digital libraries, 2018, pp. 223-232.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.639305114746094" y="52.523193359375" width="251.38324737548828" height="26.13287353515625">[14] D. Duma, M. Liakata, A. Clare, J. Ravenscroft, and E. Klein, &#x27;Rhetorical classification of anchor text for citation recommendation,&#x27; D-Lib Magazine, vol. 22, no. 9/10, pp. 10-1045, 2016.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.764869689941406" y="79.13818359375" width="251.36858367919922" height="54.4737548828125">[15] P. W. J. Staar, M. Dolfi, C. Auer, and C. Bekas, &#x27;Corpus conversion service: A machine learning platform to ingest documents at scale,&#x27; in Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining, ser. KDD &#x27;18. New York, NY, USA: Association for Computing Machinery, Jul. 2018, p. 774-782. [Online]. Available: https://doi.org/10.1145/3219819.3219834</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.59340286254883" y="133.27642822265625" width="251.42875289916992" height="25.98504638671875">[16] G. M. Binmakhashen and S. A. Mahmoud, &#x27;Document layout analysis: a comprehensive survey,&#x27; ACM Computing Surveys (CSUR), vol. 52, no. 6, pp. 1-36, 2019.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.642887115478516" y="159.76220703125" width="251.37926864624023" height="17.93975830078125">[17] (2021, Dec.) Top computer languages. StatisticsTimes.com. [Online]. Available: https://statisticstimes.com/tech/top-computer-languages.php</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.76494216918945" y="177.9166259765625" width="252.12043380737305" height="35.68121337890625">[18] V. Kumar. (2019, Sep.) Python vs R: What&#x27;s best for machine learning. Towards Data Science Inc. Toronto, Canada. [Online]. Available: https://towardsdatascience.com/ python-vs-r-whats-best-for-machine-learning-93432084b480</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.88736343383789" y="213.46044921875" width="252.14944076538086" height="27.2296142578125">[19] G. Aggarwal. (2021) The state of developer ecosystem 2021. JetBrains. Prague, Czech Republic. [Online]. Available: https://www.jetbrains. com/lp/devecosystem-2021/python/</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.83747863769531" y="240.7794189453125" width="251.21363830566406" height="26.3323974609375">[20] M. Zaharia, M. Chowdhury, M. J. Franklin, S. Shenker, and I. Stoica, &#x27;Spark: Cluster computing with working sets,&#x27; in 2nd USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 10), 2010.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.96230697631836" y="267.74139404296875" width="252.1135597229004" height="26.843841552734375">[21] (2022) About openshift serverless. Red Hat, Inc. Raleigh, NC. [Online]. Available: https://docs.openshift.com/container-platform/4.8/serverless/ discover/about-serverless.html</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.571990966796875" y="294.5876770019531" width="251.4501953125" height="35.38897705078125">[22] D. Garcia. (2017, Mar.) aiotasks. Next Technology Professionals. Warsaw, Poland. [Online]. Available: https://github.com/cr0hn/aiotasks [23] A. Kovalevich. (2020, May) Celery pool asyncio. [Online]. Available: https://github.com/kai3341/celery-pool-asyncio</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.77555847167969" y="329.9131774902344" width="251.2501678466797" height="17.642242431640625">[24] D. Beazley, &#x27;Understanding the python gil,&#x27; in PyCON Python Conference. Atlanta, Georgia, 2010.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.84617233276367" y="348.3946228027344" width="252.47270584106445" height="26.0625">[25] G. Aggarwal. (2021, Jul.) Detectron2 model zoo and baselines. [Online]. Available: https://github.com/facebookresearch/detectron2/ blob/main/MODEL ZOO.md</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.96399688720703" y="375.4746398925781" width="251.32711029052734" height="26.4970703125">[26] P. W. Staar, M. Dolfi, and C. Auer, &#x27;Corpus processing service: A knowledge graph platform to perform deep data exploration on corpora,&#x27; Applied AI Letters, vol. 1, no. 2, p. e20, Dec. 2020.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.767295837402344" y="402.1568603515625" width="251.43878936767578" height="44.028717041015625">[27] T. J. Jacobsson, A. Hultqvist, A. Garc&#x27;ıa-Fern&#x27;andez, A. Anand, A. Al-Ashouri, A. Hagfeldt, A. Crovetto, A. Abate, A. G. Ricciardulli, A. Vijayan et al., &#x27;An open-access database and analysis tool for perovskite solar cells based on the FAIR data principles,&#x27; Nature Energy, vol. 7, no. 1, pp. 107-115, 2022.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.7948112487793" y="446.5318298339844" width="251.30476760864258" height="35.519775390625">[28] E. O. Pyzer-Knapp, J. W. Pitera, P. W. Staar, S. Takeda, T. Laino, D. P. Sanders, J. Sexton, J. R. Smith, and A. Curioni, &#x27;Accelerating materials discovery using artificial intelligence, high performance computing and robotics,&#x27; npj Computational Materials, vol. 8, no. 1, pp. 1-9, Apr. 2022.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.697174072265625" y="482.6914367675781" width="251.3858642578125" height="35.382110595703125">[29] M. Piantanida, E. Bonamini, C. Caborni, F. Bergero, P. Staar, M. Dolfi, C. Auer, and V. Saturnino, &#x27;Using knowledge graphs to navigate through geological concepts extracted from documents,&#x27; in OMC Med Energy Conference and Exhibition. OnePetro, Sep. 2021.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.58652114868164" y="518.8138732910156" width="251.6739158630371" height="34.968780517578125">[30] V. D. Badal, D. Wright, Y. Katsis, H.-C. Kim, A. D. Swafford, R. Knight, and C.-N. Hsu, &#x27;Challenges in the construction of knowledge bases for human microbiome-disease associations,&#x27; Microbiome, vol. 7, no. 1, pp. 1-15, 2019.</bbox>
+</span></p>
+<p><span info="paragraph" style="font-family:Times-Roman; color: rgb(0, 0, 0);" >
+<bbox page="11" x="48.51851272583008" y="554.1002197265625" width="251.6143913269043" height="44.955596923828125">[31] M. Manica, C. Auer, V. Weber, F. Zipoli, M. Dolfi, P. W. J. Staar, T. Laino, C. Bekas, A. Fujita, H. Toda, S. Hirose, and Y. Orii, &#x27;An information extraction and knowledge graph platform for accelerating biochemical discoveries,&#x27; CoRR, vol. abs/1907.08400, 2019. [Online]. Available: http://arxiv.org/abs/1907.08400</bbox>
+</span></p>
+</section>
+
+        </body>
+
+        </html>
+        
